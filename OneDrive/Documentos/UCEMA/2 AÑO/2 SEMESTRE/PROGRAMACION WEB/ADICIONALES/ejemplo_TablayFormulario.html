@@ -1,0 +1,267 @@
+<!-- Para que me aparezca la carcasa de html pongo html:5 y enter -->
+<!-- para poder ver ejemplo_tabla en el navegador, voy a archivos/bilioteca y lo abro de ahi -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de tabla</title>
+</head>
+<!--Tabla-->
+<body>
+    <table border="6 px solid">
+        <thead>
+            <tr>
+                <th>
+                    DNI
+                </th>
+                <th>
+                    Nombre
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    20.331.221
+                </td>
+                <td>
+                    Jorge
+                </td>
+             </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th></th>
+                <th> Página 1</th>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <form> <!--Formulario 1-->
+        Nombre: <input name="nombre" type="text" placeholder="Ingrese su nombre">
+        <br> Mail: <input name="mail" type="email" placeholder="Ingrese su mail">
+        <br> Contraseña: <input name="password" type="password" placeholder="Ingrese su contraseña">
+        <br> Edad: <input name="adulto" type="checkbox"> Soy mayor de 18
+        <br> <input name="sexo" type="radio" value="F"> Femenino
+        <br> <input name="sexo" type="radio" value="M"> Masculino
+    </form>
+
+    <br> Descripcion <br> 
+    <textarea name="descripcion" cols="30" rows="10" placeholder="Ingrese descripción"></textarea>
+
+    <hr> <!--Formulario 2 -->
+    <form>
+        <fieldset>
+            <legend>Información Persona</legend>
+            <label for="nombre"> Nombre: </label> <input name="nombre" type="text" tabindex="1">
+            <label for="apellido"> Apellido: </label> <input name="apellido" type="text" tabindex="2">
+            <label for="fechanac"> Fecha de Nacimiento: </label> <input name="fechanac" type="date"
+            min="2002/11/29" max="2010/12/31" tabindex="3">
+        </fieldset>
+        <fieldset>
+            <legend> INformación de la Compra</legend>
+            <label for="producto"> Producto: </label> <input name="producto" type="text" tabindex="4">
+            <label for="cantidad"> Cantidad: </label> <input name="cantidad" type="number" tabindex="5">
+            <label for="monto"> Monto: </label> <input name="monto" type="number" step="0.01" tabindex="6">
+        </fieldset>
+        <hr>
+        <!--Para indicar un lenguaje de programación-->
+        <select name="lenguaje">
+            <option value="js">Javascript</option>
+            <option value="java" selected>Java</option>
+            <option value="python">Python</option>
+            <option value="otros">Otros</option>
+        </select>
+        <!--Para seleccionar los intereses:-->
+        <hr>
+    <select name="intereses" multiple>
+        <option value="arte">Arte</option>
+        <option value="deportes" selected>Deportes</option>
+        <option value="cine">Cine</option>
+        <option value="autos">Autos</option>
+        <option value="otros">Otros</option>
+    </select>
+    </form>
+</body>
+</html>
+
+
+<!--Para hacer varias columnas uso esto-->
+<!-- aca arranca lo de columnas
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <h1>Hello, World!</h1>
+          <div class="col-6" style="background-color:red">
+          Col 1
+          </div>
+          <div class="col-6" style="background-color:blue">
+          Col2
+          </div>
+aca termina lo de columnas-->
+
+
+<!--
+    <section id="Productos">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="roww">
+            <div><center><h1 style="color: rgb(95, 95, 95)">CONOCE NUESTROS PRODUCTOS</h1></center></div>
+           
+            <div class="col-3" style="background-color: rgb(255, 106, 0)">
+            <img class="cookie" src="./assets/img/galletita1.jpeg" alt="galletita1" width="200">
+            <h3 style="color: rgb(251, 179, 135)">COOKIE</h3> <I style="color: white">Con chips de chocolate</I>
+            </div>
+            <div class="col-3" style="background-color:rgb(251, 179, 135)">
+            <img src="./assets/img/galletita2.jpeg" alt="galletita2" width="200">
+            <h3 style="color: rgb(255, 106, 0)">BASTONCITOS</h3><I style="color: white">De pollo y zanahoria</I>
+            </div>
+            <div class="col-3" style="background-color:rgb(255, 106, 0)">
+            <img src="./assets/img/galletita5.jpeg" alt="galletita3" width="200">
+            <h3 style="color: rgb(251, 179, 135)">HUESITOS</h3> <I style="color: white">Con sabor a carne asada</I>
+            </div>
+            <div class="col-3" style="background-color:rgb(251, 179, 135)">
+            <img src="./assets/img/galletita4.jpeg" alt="galletita4" width="200">
+            <h3 style="color: rgb(255, 106, 0)">CARAMELOS</h3><I style="color: white">Con semillas variadas</I>
+            </div>
+    </section>
+-->
+
+
+<!-- FEEBCACK
+<section id="feedback">
+  <div class="mb-3">
+    <h1 style="color: rgb(251, 179, 135)">Dejanos tu Feedback</h1>
+    <label for="exampleFormControlInput1" class="form-label">Ingresá tu mail</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="usuario@gmail.com">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Tu información nos ayuda a mejorar</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="¿Qué te pareció nuestro servicio? - ¿Qué podríamos mejorar o incorporar en nuestros productos? - ¿Qué es lo que más te gusta de nosotros?"></textarea >
+    </div>
+</section> -->
+
+
+
+<!-- NUESTRA HISTORIA Y FOTO IPA
+    <section id="Atributos" class="container">
+      <div>
+        <h1>Atributos</h1>
+        <hr style="color: black">
+        <h3>Nuestra historia</h3>
+        <p>
+          Les cuento como surge Bite Me. Soy chef recibida en La Plata, ciudad donde vivimos. <br> Hace unos meses comencé con la idea de unir dos de mis grandes pasiones: la cocina y los animales. <br> Empezó de mi parte como madre perruna, el querer informarme más sobre su alimentación <br> y comencé a cocinarle snacks ricos pero realmente sanos para ella. <br> Le encantaron, por eso quise compartirlos con ustedes!
+        </p>
+        <h3>Nosotras</h3>
+        <p>
+          Ofrecemos a sus perritos una opción deliciosa y 100% natural, con materias primas <br> seleccionadas especialmente para ellos! Opto por recetas con productos frescos, sin <br> conservantes, saborizantes ni colorantes artificiales, pero super sabrosos! Hechos en <br> casa, como si fueran para Ipa
+        </p>
+      </div>
+    </section>
+
+
+    <section id="foto_ipa" class="container">
+      <div class="col-6">
+        <div class="animate__animated animate__backInUp">
+        <img class="img-fluid w-100" src="./assets/img/foto_ipa_cocinera.jpeg" alt="" width="200" height="200">
+        <h4>Hechos en casa</h4>
+        <i>Como si fuesen para Ipa</i>
+      </div>
+      </div>
+    </section>
+  -->
+
+
+<!--FORMULARIO
+  <section id="Formulario">
+    <div class="col-6">
+      <h1 style="color: rgb(251, 179, 135)">Formulario</h1>
+      <form action="index.html" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Ingresar Nombre">
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido" placeholder="Ingresar Apellido">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Ingresar Email">
+        <br>
+        <label for="telefono">Telefono</label>
+        <input type="tel" name="telefono" id="telefono" placeholder="Ingresar Teléfono">
+        <br>Mensaje<br>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingresar Mensaje"></textarea>
+        <br>
+        <input type="submit" value="Enviar">
+      </form>
+    </section>-->
+
+    <!--BOX PRESENTACION
+      <section id="box_presentacion">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+           <h1 style="color:rgb(95, 95, 95)" class="animate__animated animate__backInUp">BITE ME🐶</h1>
+           <hr style="color:rgb(255, 106, 0)">
+            <div class="col-6" style="background-color: rgb(255, 106, 0)">
+              <video src="./assets/video/video2.mp4" alt="Video" autoplay controls muted loop width="200" type="video/mp4">
+                Tu navegador no admite el elemento <code>video</code>
+                </video>
+            </div>
+            <div class="col-6" style="background-color:whitesmoke">
+
+              <div class="card" >
+                <div class="card-header">
+                  Página oficial
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Bienvenidos a Bite Me</h3>
+                  <p class="lead">En esta página encontrarán alimentos saludables para perros</p>
+                  <button type="button" class="btn btn-secondary btn-lg" style="background-color: grey">Ver Productos</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>-->
+
+<!--PROMO
+<section>
+  <div id="promo">
+    <h2>PROMO</h2>
+    <p>
+      <img src="./assets/img/img3.jpeg" alt="" width="150px" height="150px">
+    </p>
+    <h3>¿Te la vas a perder?</h3>
+    <p>Aprovechá nuestros snacks a un precio increíble🥳🎉<br> Podes elegir la promo que quieras<br> Consultá nuestro stock disponible</p>
+  </div>
+</section>-->
+
+<!-- Quiero recibir informacion 
+<section id="formulario">
+  <h2 style="color: rgb(251, 179, 135); " >Quiero recibir información</h2>
+  <div class="input-group">
+    <span class="input-group-text">Nombre y Apellido</span>
+    <input type="text" aria-label="First name" class="form-control" placeholder="Nombre">
+    <input type="text" aria-label="Last name" class="form-control" placeholder="Apellido">
+  </div>
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Ingrese su email" 
+    aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+  </div>
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default">Ciudad de residencia</span>
+    <input type="city" class="form-control" aria-label="Sizing example input">
+</div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+    <label class="form-check-label" for="flexCheckIndeterminate">
+      Quiero recibir notificaciones
+    </label>
+  </div>
+  <button type="button" class="btn btn-secondary">Enviar</button>
+</section>-->

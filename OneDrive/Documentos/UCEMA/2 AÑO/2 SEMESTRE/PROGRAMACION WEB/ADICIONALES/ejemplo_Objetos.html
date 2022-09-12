@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+        var persona={
+        nombre: "Pedro",
+        apellido: "Perez",
+        edad: 25,
+        email: "pedroj@gmail.com"
+    }
+
+    console.log( persona);
+    console.log("El nombre es: " + persona.nombre);
+    console.log("El apellido es: " + persona["apellido"]);
+
+    for (atributo in persona)
+document.write("El valor del atributo es " + persona[atributo] + "<br>");
+
+</script>
+</html>
